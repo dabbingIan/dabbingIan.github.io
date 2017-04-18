@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Menu </title>
+<script src="https://simplycodingcourses.com/files/simplyjs/simply.js"></script>
+<script>
+function start(){
+sjs.open();
+var menu_text = new sjs.Text("MENU",28,"green");
+
+menu_text.centerH();
+
+var startBtn = new sjs.Button("Start", function(){
+	window.location = "fish.html";
+});
+
+startBtn.center();
+
+var info_text = new sjs.Text("Created By Ian Gibes",20,"black");
+
+info_text.bottom().centerH();
+
+var help_text = new sjs.Text("How To Play: Try to eat the enemy spaceships without letting them destroy you! (P.S. The crumb will give you a superpower!)",20,"red");
+
+help_text.bottom().centerH();
+
+}
+</script>
+</head>
+<body onload="start()">
+<h1> Fish </h1>
+
+<div id="target" style="margin:auto;background:grey;"></div>
+</body>
+</html>
